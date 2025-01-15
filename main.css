@@ -1,0 +1,211 @@
+/*-------------------------------------------------------------------------------------ОКНО КНОПКИ--------------------------------------------------------------------------------------------------------------------*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background-color: #00000079;
+    backdrop-filter: blur(20px);
+}
+
+.modal-content {
+    background-color: #1b1e23;
+        margin: 5% auto;
+        padding: 10px;
+        width: 35%;
+        border-radius: 15px;
+        border: 2px solid rgb(0, 0, 0);
+}
+
+.close {
+        color: #ffffff;
+        float: right;
+        padding-right: 20px;
+        font-size: 50px;
+        font-weight: bold; 
+}
+.close:hover, .close:focus {
+        color: #6d3636;
+        text-decoration: none;
+        cursor: pointer;
+}
+
+.POPUGAI {
+    font-size: 40px;
+    margin: 0 auto;
+}
+
+/*-------------------------------------------------------------------------------------ШАПКА--------------------------------------------------------------------------------------------------------------------*/
+
+header {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 70%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-evenly;
+    background-color: #1e1f229f;
+    backdrop-filter: blur(35px);
+    z-index: 999 rgba(30, 31, 34, 0.507);
+}
+
+/*-------------------------------------------------------------------------------------ТЕЛО--------------------------------------------------------------------------------------------------------------------*/
+
+body {
+    background-color: #111317;
+    margin-top: 120px;
+}
+.about-me {
+    text-align: justify;
+}
+.centered-object {
+    padding-left: 40px ;
+    padding-right: 40px ;
+    background-color: #1b1e23;
+    width: 45%;
+    text-align: center;
+    stroke-width: 1px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    font-family: Oswald Regular;
+    font-size: large;
+    margin: auto;
+}
+
+/*-------------------------------------------------------------------------------------ТЕКСТ--------------------------------------------------------------------------------------------------------------------*/
+
+h1 {
+    font-size: 70px;
+    padding-bottom: 40px;
+}
+
+h2 {
+    font-size: 40px;
+}
+h3 {
+    font-size: 30px;
+}
+
+/*-------------------------------------------------------------------------------------ФОТО--------------------------------------------------------------------------------------------------------------------*/
+
+.photo {
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;
+    width: 80%; /* Изображение займет половину ширины родительского элемента */
+    height: auto; /* Высота будет рассчитана автоматически */
+    margin: auto;
+}
+
+/*-------------------------------------------------------------------------------------ССЫЛКИ--------------------------------------------------------------------------------------------------------------------*/
+
+a {
+    font-size: 50px;
+            color: #707070;
+            text-decoration: none; /* Убираем подчёркивание */
+            position: sticky; /* Позиционирование для псевдоэлемента */
+            z-index: 1; /* Обеспечиваем отображение над другими элементами */
+            transition: color 0.5s ease; /* Плавный переход цвета */
+            font-family: Oswald Regular;
+            text-align: center;
+}
+
+.telegram {
+    color: #37b2e8;
+    padding: 20px;
+    font-family: 'Vampire Wars';
+}
+.e-mail {
+    color:#cf1313;
+    padding: 20px;
+    font-family: 'Vampire Wars';
+}
+
+.git-hub {
+    color: #ffffff;
+    padding: 20px;
+    font-family: 'Vampire Wars';
+}
+
+a::before {
+    border-radius: 15px;
+    background-color: #323436; /* Фон */
+    z-index: -1; /* Размещаем позади текста */
+    transition: transform 0.5s ease; /* Плавный переход трансформации */
+    transform: scale(0); /* Изначально скрыто */
+}
+
+a:hover {
+    color: #6d3636; /* Цвет текста при наведении */
+}
+
+a:hover::before {
+    transform:scale(1); /* Показываем при наведении */
+}
+
+/*-------------------------------------------------------------------------------------ЛОГО--------------------------------------------------------------------------------------------------------------------*/ 
+
+    .logo {
+        height: 80px;
+}
+    nav {
+        float: right;
+}
+
+    nav ul {
+        list-style-type: none;
+        gap: 20px;
+}
+    
+    nav ul li {
+        margin-right: 10px;
+}
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #cf1313;
+        font-weight: bold;
+}
+
+
+/*-------------------------------------------------------------------------------------БОКСЫ--------------------------------------------------------------------------------------------------------------------*/    
+    p span {
+        display: inline-block;       /* Устанавливаем блочный контекст для спанов */
+        border: 2px solid #333;      /* Рамка толщиной 2 пикселя черного цвета */
+        border-radius: 10px;         /* Округляем углы рамки */
+        padding: 3px;                /* Внутренние отступы для удобства чтения */
+        margin: 0 1px;               /* Внешние отступы между словами */
+}
+
+/*-------------------------------------------------------------------------------------КНОПКА--------------------------------------------------------------------------------------------------------------------*/ 
+
+button {
+        color: #000000;           /* Цвет текста */
+        border: none;           /* Убираем границу */
+        border-radius: 15px;     /* Округленные углы */
+        font-size: 20px;        /* Размер шрифта */
+        font-family: 'Vampire Wars';
+        padding: 20px 20px;     /* Поля внутри кнопки */
+        cursor: pointer;        /* Курсор в виде руки при наведении */
+        transition: background-color 0.5s ease; /* Анимация перехода */
+        position: fixed;
+        right: 15px;
+        top:10px;
+    }
+    
+button:hover {
+        background-color: #6d3636; /* Изменяем цвет фона при наведении */
+    }
+
+    .modalImage {
+        border-radius: 30px;
+    }
